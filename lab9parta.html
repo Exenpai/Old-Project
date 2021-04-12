@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset= utf-8">
+    <title>City Delicatessen</title>
+    <link href="lab9parta.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="lab9parta.js"></script>
+</head>
+
+<header>
+    <h1>City Delicatessen</h1>
+</header>
+
+<body>
+    <div>
+        <h2><span id="date"></h2>
+    </div>
+    <div>
+        <h2><span id="welcome"></h2>
+    </div>
+    <form>
+        <fieldset>
+            <legend>
+                <h2>Contact Details</h2>
+            </legend>
+            <table class="center">
+                <tr>
+                    <td>
+                        <label for="fullname">Full Name:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="fullname" id="fullname" size="35" pattern="[A-Za-z\s]+"
+                            placeholder="Enter your first and last name here" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="address">Street Address:</label>
+                    </td>
+                    <td>
+                        <input type="text" name="address" id="address" size="35"
+                            pattern="([a-zA-Z0-9]| |/|\\|@|#|\$|%|&)+" placeholder="Enter your address here" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="phone">Telephone Number:</label>
+                    </td>
+                    <td>
+                        <input type="tel" name="phone" id="phone" placeholder="000-000-0000"
+                            pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Pizza Choices</h2>
+            </legend>
+            <table>
+                <table>
+                <tr>
+                    <td class=" center">
+                        <figure>
+                            <img src="https://images.contentstack.io/v3/assets/blt068dbc54bf4fc7ed/bltf70df0a3f7b98d04/5db5c829e9effa6ba52972ea/Triple_Cheese_Pizza_v2.jpg"
+                                height=" 75px" width="75px" alt="Picture of cheese pizza">
+                            <figcaption>
+                                <input type="radio" name="pizzatype" value="Super Cheesy">Super Cheesy
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td class="center">
+                        <figure>
+                            <img src="https://www.queensleeappetit.com/wp-content/uploads/2019/02/Meat-Lovers-Pizza-6.jpg"
+                                height="75px" width="75px" alt="Picture of extra meaty pizza">
+                            <figcaption>
+                                <input type="radio" name="pizzatype" value="Extra Meaty">Extra Meaty
+                            </figcaption>
+                        </figure>
+                    </td>
+                    <td class="center">
+                        <figure>
+                            <img src="https://usercontent2.hubstatic.com/14685585.jpg" height=" 75px" width="75px"
+                                alt="Picture of cheese pizza">
+                            <figcaption>
+                                <input type="radio" name="pizzatype" value="Really Veggy">Really Veggy
+                            </figcaption>
+                        </figure>
+                    </td>
+                </tr>
+            </table>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="pizzasize" id="Small" value="8.50">Small $8.50
+                        <input type="radio" name="pizzasize" id="Medium" value="11.50">Medium $11.50
+                        <input type="radio" name="pizzasize" id="Large" value="14.00">Large $14.00
+                        <input type="radio" name="pizzasize" id="Extra Large" value="16.50">Extra Large $16.50
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pizzaquantity">Quantity:</label>
+                        <input type="number" name="pizzaquantity" id="pizzaquantity" min="0">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="pizzatoppings">Extra toppings $1.75 each:</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="checkbox" name="Extracheese" value="1.75">Extra Cheese
+                        <input type="checkbox" name="Pepperoni" value="1.75">Pepperoni
+                        <input type="checkbox" name="Mushrooms" value="1.75">Mushrooms
+                        <input type="checkbox" name="Bacon" value="1.75">Bacon
+                        <input type="checkbox" name="Olives" value="1.75">Olives
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Sandwich Choices (Choose one only one of these)</h2>
+            </legend>
+            <table>
+                <table>
+                    <tr>
+                        <td class="center">
+                            <figure>
+                                <img src="https://www.thegardengrazer.com/wp-content/uploads/2017/05/avo-sandwich.png"
+                                    height=" 75px" width="75px" alt="Picture of all garden vegetarian sandwich">
+                                <figcaption>
+                                    <input type="radio" name="sandwich" id="All Garden Vegetarian" value="7.50">All
+                                    Garden Vegetarian $7.50
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td class="center">
+                            <figure>
+                                <img src="https://www.365daysofcrockpot.com/wp-content/uploads/2019/04/BBQ-Beef-Sandwiches.jpg"
+                                    height=" 75px" width="75px" alt="Picture of big beef on a bun">
+                                <figcaption>
+                                    <input type="radio" name="sandwich" id="Big Beef on a Bun" value="8.50">Big Beef on
+                                    a Bun $8.50
+                                </figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td class="center">
+                            <figure>
+                                <img src="https://assets.epicurious.com/photos/5620ffcf219057901cc67b64/master/pass/364812_grilled-cuban-sandwich_1x1.jpg"
+                                    height=" 75px" width="75px" alt="Picture of mixed grill sandwich">
+                                <figcaption>
+                                    <input type="radio" name="sandwich" id="Mixed Grill" value="9.50">Mixed Grill $9.50
+                                </figcaption>
+                            </figure>
+                        </td>
+                        <td class="center">
+                            <figure>
+                                <img src="https://www.thespruceeats.com/thmb/7mSTJ8amwWy1D-UFlciNuMLfv7Y=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/pulled-pork-and-slaw-on-plate-18-56a8b9625f9b58b7d0f49e73.jpg"
+                                    height=" 75px" width="75px" alt="Picture of grilled pork sandwich">
+                                <figcaption>
+                                    <input type="radio" name="sandwich" id="Grilled Pork" value="9.50">Grilled Pork
+                                    $9.50
+                                </figcaption>
+                            </figure>
+                        </td>
+                    </tr>
+                </table>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="sandwichquantity">Quantity:</label>
+                            <input type="number" name="sandwichquantity" id="sandwichquantity" min="0">
+                        </td>
+                    </tr>
+                </table>
+        </fieldset>
+        <fieldset>
+            <legend>
+                <h2>Drink Choices</h2>
+            </legend>
+            <table>
+                <tr>
+                    <td>
+                        <input type="radio" name="drink" value="cola">Cola
+                        <input type="radio" name="drink" value="orange">Orange
+                        <input type="radio" name="drink" value="lemon">Lemon
+                        <input type="radio" name="drink" value="rootbeer">Root Beer
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="radio" name="drinksize" id="Small" value="1.25">Small $1.25
+                        <input type="radio" name="drinksize" id="Medium" value="1.75">Medium $1.75
+                        <input type="radio" name="drinksize" id="Large" value="2.00">Large $2.00
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="drinkquantity">Quantity:</label>
+                        <input type="number" name="drinkquantity" id="drinkquantity" min="0">
+                    </td>
+                </tr>
+            </table>
+        </fieldset>
+        <div class=" spacing" style=" text-align: center;">
+            <input type="button" name="b1" value="OK" onClick="reg();">
+            <input type="reset" name="b2" value="CANCEL">
+        </div>
+    </form>
+    <p id="data"></p>
+</body>
+
+</html>
